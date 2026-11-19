@@ -90,10 +90,20 @@ const policySections: readonly PolicySection[] = [
     id: "veri-saklama-ve-silme",
     title: "Veri saklama ve silme",
     content: (
-      <p>
-        Oyun verileri yalnızca cihazınızda tutulur. Kayıtlarınızı uygulama içinden silebilirsiniz. Uygulamayı
-        kaldırdığınızda bu veriler de silinir. Uygulama Android bulut yedeklemesine dahil edilmez.
-      </p>
+      <>
+        <p>Oyun verileri cihazınızda tutulur. Kayıtlarınızı uygulama içinden silebilirsiniz.</p>
+        <p>
+          Cihazınızda Android yedeklemesi açıksa, oyun kayıtlarınız ve ayarlarınız Android’in kendi yedekleme hizmeti
+          aracılığıyla kendi Google hesabınızdaki yedeğe dahil edilebilir. Bu yedek Google tarafından sizin
+          hesabınızda saklanır; geliştirici bu verilere erişmez. Yedeklemeyi cihazınızın Ayarlar bölümünden
+          kapatabilirsiniz.
+        </p>
+        <p>
+          Uygulamayı kaldırırken Android’in sunduğu “verileri koru” seçeneğini işaretlerseniz kayıtlarınız cihazda
+          kalır ve uygulamayı yeniden yüklediğinizde geri gelir. Bu seçeneği işaretlemezseniz uygulama verileri
+          kaldırma sırasında silinir.
+        </p>
+      </>
     ),
   },
   {
@@ -101,8 +111,8 @@ const policySections: readonly PolicySection[] = [
     title: "Güvenlik",
     content: (
       <p>
-        Veriler cihazınızdan dışarı gönderilmediği için ağ üzerinden aktarım riski oluşmaz. Verilerinizi korumak
-        için cihazınızın kilit ve güvenlik ayarlarını kullanmanızı öneririz.
+        Uygulama verilerinizi hiçbir sunucuya göndermediği için uygulamaya kaynaklı bir ağ aktarımı riski
+        oluşmaz. Verilerinizi korumak için cihazınızın kilit ve güvenlik ayarlarını kullanmanızı öneririz.
       </p>
     ),
   },
@@ -162,7 +172,7 @@ export default function PrivacyPolicyPage() {
               </div>
               <div>
                 <dt>Yürürlük tarihi</dt>
-                <dd>2 Kasım 2026</dd>
+                <dd>19 Kasım 2026</dd>
               </div>
             </dl>
           </header>
@@ -174,7 +184,7 @@ export default function PrivacyPolicyPage() {
             </section>
           ))}
 
-          <p className="policy-updated">Son güncelleme: 2 Kasım 2026</p>
+          <p className="policy-updated">Son güncelleme: 19 Kasım 2026</p>
         </div>
       </div>
     </article>
