@@ -53,7 +53,7 @@ export type SectionLink = {
 export const siteName = "Aurelia: Ashes of Memory";
 export const developerName = "Murat Akpınar";
 export const contactEmail = "makpinar857@gmail.com";
-export const packageName = "com.aurelia.ashesofmemory";
+export const packageName = "com.cypnosgames.aureliaashesofmemory";
 export const storeLabel = "Google Play'de yakında";
 export const privacyPath = "/gizlilik-politikasi";
 
